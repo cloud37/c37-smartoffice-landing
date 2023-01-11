@@ -194,27 +194,27 @@ export default {
         logos: [
             {
                 'name': 'Philips Hue',
-                'url': '~/assets/images/hue_logo.png'
+                'url': '/images/hue_logo.png'
             },
             {
                 'name': 'Google Assistant',
-                'url': '~/assets/images/google_assistant_logo.png'
+                'url': '/images/google_assistant_logo.png'
             },
             {
                 'name': 'Alexa',
-                'url': '~/assets/images/alexa_logo.png'
+                'url': '/images/alexa_logo.png'
             },
             {
                 'name': 'Zigbee',
-                'url': '~/assets/images/zigbee_logo.png'
+                'url': '/images/zigbee_logo.png'
             },
             {
                 'name': 'MQTT',
-                'url': '~/assets/images/mqtt_logo.png'
+                'url': '/images/mqtt_logo.png'
             },
             {
                 'name': 'matter',
-                'url': '~/assets/images/matter_logo.png'
+                'url': '/images/matter_logo.png'
             }
         ],
         footerNavigation: [
