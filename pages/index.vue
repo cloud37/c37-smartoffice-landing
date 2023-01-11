@@ -194,27 +194,27 @@ export default {
         logos: [
             {
                 'name': 'Philips Hue',
-                'url': '/images/hue_logo.png'
+                'url': 'https://res.cloudinary.com/dtzn0cvga/image/upload/v1673438149/smartoffice-landing/hue_logo_retfq0.png'
             },
             {
                 'name': 'Google Assistant',
-                'url': '/images/google_assistant_logo.png'
+                'url': 'https://res.cloudinary.com/dtzn0cvga/image/upload/v1673438149/smartoffice-landing/google_assistant_logo_jgm4mn.png'
             },
             {
                 'name': 'Alexa',
-                'url': '/images/alexa_logo.png'
+                'url': 'https://res.cloudinary.com/dtzn0cvga/image/upload/v1673438149/smartoffice-landing/alexa_logo_trt7vd.png'
             },
             {
                 'name': 'Zigbee',
-                'url': '/images/zigbee_logo.png'
+                'url': 'https://res.cloudinary.com/dtzn0cvga/image/upload/v1673438149/smartoffice-landing/zigbee_logo_uyyi5k.png'
             },
             {
                 'name': 'MQTT',
-                'url': '/images/mqtt_logo.png'
+                'url': 'https://res.cloudinary.com/dtzn0cvga/image/upload/v1673438149/smartoffice-landing/mqtt_logo_det573.png'
             },
             {
                 'name': 'matter',
-                'url': '/images/matter_logo.png'
+                'url': 'https://res.cloudinary.com/dtzn0cvga/image/upload/v1673438149/smartoffice-landing/matter_logo_oz4hxh.png'
             }
         ],
         footerNavigation: [
