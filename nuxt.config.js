@@ -43,6 +43,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/proxy',
   ],
 
   moment: {
@@ -52,10 +53,15 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
-    proxyHeaders: false,
-    credentials: false
+    proxy: true
+  },
+
+  proxy: {
+    "/api/": {
+      target: "https://n8n.c37-dev.de/webhook/ff10940f-ae44-4341-b2c8-4450a473ae70",
+      pathRewrite: { "^/api/": "" },
+      changeOrigin: true,
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

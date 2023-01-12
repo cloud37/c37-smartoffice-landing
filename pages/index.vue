@@ -228,7 +228,7 @@ export default {
     },
 
     async sendToForm() {
-        await this.$axios.$post('https://n8n.c37-dev.de/webhook/ff10940f-ae44-4341-b2c8-4450a473ae70', {
+        await this.$axios.$post('/api', {
             email: this.email,
             date: this.currentTime
         })
