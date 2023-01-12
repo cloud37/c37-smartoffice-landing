@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'c37-smartoffice-landing',
+    title: 'cloud37 Smart-Office',
     htmlAttrs: {
       lang: 'de',
     },
@@ -35,6 +35,8 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     // '@nuxtjs/tailwindcss',
     '@nuxt/postcss8',
+    '@nuxtjs/fontawesome',
+    '@nuxtjs/moment',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -42,6 +44,11 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
   ],
+
+  moment: {
+    defaultLocale: 'de',
+    locales: ['de']
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

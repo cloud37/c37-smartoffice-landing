@@ -9,30 +9,19 @@
             </div>
             <div class="mt-20">
               <div class="mt-6 sm:max-w-xl">
-                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Issue management for growing teams</h1>
-                <p class="mt-6 text-xl text-gray-500">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</p>
+                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Smarthome meets Office</h1>
+                <p class="mt-6 text-xl text-gray-500">Kostenersparnis durch automatisierte und intelligente Steuerung von Beleuchtung, Heizung und Klimaanlage</p>
               </div>
-              <form action="#" class="mt-12 sm:flex sm:w-full sm:max-w-lg">
+              <form @submit.prevent="sendToForm" class="mt-12 sm:flex sm:w-full sm:max-w-lg">
+                <input type="text" name="date" :value="getDate" hidden />
                 <div class="min-w-0 flex-1">
                   <label for="hero-email" class="sr-only">Email Adresse</label>
-                  <input id="hero-email" type="email" class="block w-full rounded-md border border-gray-300 px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-c37-500 focus:ring-c37-500" placeholder="Enter your email" />
+                  <input id="hero-email" v-model="email" name="email" type="email" class="block w-full rounded-md border border-gray-300 px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-c37-500 focus:ring-c37-500" placeholder="Ihre E-Mail Adresse" />
                 </div>
                 <div class="mt-4 sm:mt-0 sm:ml-3">
-                  <button type="submit" class="block w-full rounded-md border border-transparent bg-c37-500 px-5 py-3 text-base font-medium text-white shadow hover:bg-c37-600 focus:outline-none focus:ring-2 focus:ring-c37-500 focus:ring-offset-2 sm:px-10">Notify me</button>
+                  <button type="submit" class="block w-full rounded-md border border-transparent bg-c37-500 px-5 py-3 text-base font-medium text-white shadow hover:bg-c37-600 focus:outline-none focus:ring-2 focus:ring-c37-500 focus:ring-offset-2 sm:px-10">Unverbindliche Anfrage</button>
                 </div>
               </form>
-              <div class="mt-6">
-                <div class="inline-flex items-center divide-x divide-gray-300">
-                  <div class="flex flex-shrink-0 pr-5">
-                    <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                    <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                    <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                    <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                    <StarIcon class="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                  </div>
-                  <div class="min-w-0 flex-1 py-1 pl-5 text-sm text-gray-500 sm:py-3"><span class="font-medium text-gray-900">Rated 5 stars</span> by over <span class="font-medium text-c37-500">500 beta users</span></div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -57,7 +46,6 @@
         </div>
       </div>
 
-      <!-- Testimonial/stats section -->
       <div class="relative mt-20">
         <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
           <div class="relative sm:py-16 lg:py-0">
@@ -83,7 +71,7 @@
                       <svg class="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-c37-400" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
                         <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                       </svg>
-                      <p class="relative">Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet.</p>
+                      <p class="relative">Smarthome-Technologie erleichtert mir den Alltag Zuhause. Aber auch während der Arbeit können mir diese Technolgien helfen, produktiver zu sein und mich auf das Wesentliche zu konzentrieren.</p>
                     </div>
 
                     <footer class="mt-4">
@@ -96,13 +84,11 @@
           </div>
 
           <div class="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:px-0">
-            <!-- Content area -->
             <div class="pt-12 sm:pt-16 lg:pt-20">
-              <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">On a mission to empower teams</h2>
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"></h2>
               <div class="mt-6 space-y-6 text-gray-500">
-                <p class="text-lg">Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae.</p>
-                <p class="text-base leading-7">Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.</p>
-                <p class="text-base leading-7">Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.</p>
+                <p class="text-base leading-7">Verbessern Sie die Effizienz und senken Sie die Kosten in Ihrem Büro mit unseren Smarthome-Lösungen. Mithilfe von Technologien wie Matter, MQTT, Zigbee und andere Plattformen ermöglichen wir es Ihnen, die Beleuchtung, Heizung und Klimaanlage automatisch zu steuern und somit Energie zu sparen.</p>
+                <p class="text-base leading-7">Profitieren Sie von der einfachen Bedienung und der Möglichkeit, die Steuerung per Smartphone oder Tablet vorzunehmen. Fordern Sie jetzt eine unverbindliche Beratung an und erfahren Sie, wie Sie Ihr Büro auf die Zukunft vorbereiten können.</p>
               </div>
             </div>
           </div>
@@ -114,10 +100,7 @@
           <div class="lg:grid lg:grid-cols-2 lg:items-center lg:gap-24">
             <div>
               <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"></h2>
-              <p class="mt-6 max-w-3xl text-lg leading-7 text-gray-500">Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae.</p>
-              <div class="mt-6">
-                <a href="#" class="text-base font-medium text-c37-500">Meet our investors and advisors &rarr;</a>
-              </div>
+              <p class="mt-6 max-w-3xl text-lg leading-7 text-gray-500">Nutzen Sie gemeinsam mit Ihren Mitarbeitern die Vorteile der neuesten Technologien wie Matter, MQTT, Zigbee und anderen Plattformen, um Kosten zu sparen und die Effizienz in Ihrem Büro zu steigern.</p>
             </div>
             <div class="mt-12 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
               <div v-for="logo in logos" :key="logo.name" class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
@@ -150,16 +133,17 @@
             </div>
             <div class="relative">
               <div class="sm:text-center">
-                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Get notified when we&rsquo;re launching.</h2>
-                <p class="mx-auto mt-6 max-w-2xl text-lg text-c37-100">Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque.</p>
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Jetzt unverbindlich beraten lassen</h2>
+                <p class="mx-auto mt-6 max-w-2xl text-lg text-c37-100">Erfahren Sie jetzt, wie Sie durch Smarthome-Technologie im Büro Kosten sparen können. Fordern Sie jetzt eine unverbindliche Beratung an und lassen Sie sich von unseren Experten individuell beraten.</p>
               </div>
-              <form action="#" class="mt-12 sm:mx-auto sm:flex sm:max-w-lg">
+              <form @submit.prevent="sendToForm" class="mt-12 sm:mx-auto sm:flex sm:max-w-lg">
+                <input type="text" :value="getDate" hidden />
                 <div class="min-w-0 flex-1">
                   <label for="cta-email" class="sr-only">Email Adresse</label>
-                  <input id="cta-email" type="email" class="block w-full rounded-md border border-transparent px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-c37-500" placeholder="Enter your email" />
+                  <input id="cta-email" v-model="email" type="email" name="email" class="block w-full rounded-md border border-transparent px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-c37-500" placeholder="Ihre E-Mail Adresse" />
                 </div>
                 <div class="mt-4 sm:mt-0 sm:ml-3">
-                  <button type="submit" class="block w-full rounded-md border border-transparent bg-gray-900 px-5 py-3 text-base font-medium text-white shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-c37-500 sm:px-10">Notify me</button>
+                  <button type="submit" class="block w-full rounded-md border border-transparent bg-gray-900 px-5 py-3 text-base font-medium text-white shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-c37-500 sm:px-10">Unverbindliche Anfrage</button>
                 </div>
               </form>
             </div>
@@ -177,7 +161,7 @@
         </nav>
         <div class="mt-8 flex justify-center space-x-6">
             <a v-for="item in socialNavigation" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-300">
-                <span class="sr-only">{{ item.name }}</span>
+                <a :href="item.href" class="text-base text-gray-400 hover:text-gray-300">{{ item.name }}</a>
             </a>
         </div>
         <p class="mt-8 text-center text-base text-gray-400">&copy; 2023 cloud37 Deutschland GmbH. Alle Rechte vorbehalten.</p>
@@ -191,6 +175,8 @@ export default {
   name: 'IndexPage',
   data() {
     return {
+        email: '',
+        currentTime: null,
         logos: [
             {
                 'name': 'Philips Hue',
@@ -226,13 +212,29 @@ export default {
             { name: 'Impressum', href: 'https://cloud37.de/impressum/' },
         ],
         socialNavigation: [
-            { name: 'cloud37', href: 'https://cloud37.de/' },
-            { name: 'Über Uns', href: 'https://cloud37.de/unser-ziel/' },
-            { name: 'Jobs', href: 'https://cloud37.de/karriere/' },
-            { name: 'Insights', href: 'https://cloud37.de/insights/' },
-            { name: 'Kontakt', href: 'https://cloud37.de/kontakt/' },
-            { name: 'Impressum', href: 'https://cloud37.de/impressum/' },
+            { name: 'LinkedIn', href: 'https://www.linkedin.com/company/cloud37-gmbh' },
+            { name: 'GitHub', href: 'https://github.com/cloud37' },
         ]
+    }
+  },
+
+  mounted: function() {
+    this.getDate();
+  },
+
+  methods: {
+    getDate() {
+        this.currentTime = this.$moment().format('MMMM Do YYYY, h:mm:ss')
+    },
+
+    async sendToForm() {
+        await this.$axios.$post('https://n8n.c37-dev.de/webhook/ff10940f-ae44-4341-b2c8-4450a473ae70', {
+            email: this.email,
+            date: this.currentTime
+        })
+        .then(function(response) {
+            window.location.href = "/thankyou";
+        })
     }
   }
 }
