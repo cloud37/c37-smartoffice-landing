@@ -59,11 +59,7 @@ export default {
   },
 
   proxy: {
-    "/api/": {
-      target: "https://n8n.c37-dev.de/webhook/ff10940f-ae44-4341-b2c8-4450a473ae70",
-      pathRewrite: { "^/api/": "" },
-      changeOrigin: true,
-    },
+    '/api': 'https://n8n.c37-dev.de/webhook/ff10940f-ae44-4341-b2c8-4450a473ae70'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
