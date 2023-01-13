@@ -59,7 +59,7 @@ export default {
   },
 
   proxy: {
-    '/form': {'target': 'https://n8n.c37-dev.de/webhook/ff10940f-ae44-4341-b2c8-4450a473ae70', 'changeOrigin': true, 'pathRewrite': {'^/form': '/'}}
+    '/form': {'target': 'https://n8n.c37-dev.de/webhook/collect-leads-01-smartoffice', 'changeOrigin': true, 'pathRewrite': {'^/form': '/'}}
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
