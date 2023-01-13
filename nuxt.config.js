@@ -54,11 +54,12 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseUrl: '/'
+    baseUrl: '/',
+    proxy: true
   },
 
   proxy: {
-    'form': 'https://n8n.c37-dev.de/webhook/ff10940f-ae44-4341-b2c8-4450a473ae70'
+    '/form': {'target': 'https://n8n.c37-dev.de/webhook/ff10940f-ae44-4341-b2c8-4450a473ae70', 'changeOrigin': true, 'pathRewrite': {'^/form': '/'}}
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
