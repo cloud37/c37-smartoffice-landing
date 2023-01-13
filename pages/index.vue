@@ -228,11 +228,11 @@ export default {
     },
 
     async sendToForm() {
-        await this.$axios.$post('/api', {
+        await this.$axios.$post('/form', {
             email: this.email,
             date: this.currentTime
         })
-        .then(function(response) {
+        .then(function() {
             window.location.href = "/thankyou";
         })
     }
